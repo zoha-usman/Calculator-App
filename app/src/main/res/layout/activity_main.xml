@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/grey">
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C4E9EAEC"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="@string/calculatorTitle"
+                android:textSize="50sp"
+                android:textColor="#E18606"
+                android:textStyle="bold|italic" />
+
+
+            <EditText
+                android:id="@+id/number1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edit_text_background"
+                android:backgroundTint="@color/editTextcolor"
+                android:gravity="center"
+                android:hint="@string/enter_number"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/number2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_background"
+                android:backgroundTint="@color/editTextcolor"
+                android:gravity="center"
+                android:hint="@string/enter_number"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/Add"
+                    android:textSize="25sp"
+                    android:background="@drawable/btn_background"
+                    android:backgroundTint="@color/btnTint"
+                    android:textColor="@color/white"
+
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_subtraction"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/Subtraction"
+                    android:background="@drawable/btn_background"
+                    android:backgroundTint="@color/btnTint"
+                    android:textColor="@color/white"
+
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_mul"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/Multiplication"
+                    android:background="@drawable/btn_background"
+                    android:backgroundTint="@color/btnTint"
+                    android:textColor="@color/white"
+
+
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_division"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="40dp"
+                    android:text="@string/Division"
+                    android:background="@drawable/btn_background"
+                    android:backgroundTint="@color/btnTint"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/answer"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/edit_text_background"
+                android:text=""
+                android:textColor="@color/white"
+                android:backgroundTint="@color/blueEditext"
+                android:textSize="25sp"
+                android:textStyle="bold|italic" />
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Task2Calcualator</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="Add">+</string>
+    <string name="Subtraction">−</string>
+    <string name="Multiplication">×</string>
+    <string name="Division">÷</string>
+    <string name="calculatorTitle">Calculator</string>
+</resources>
